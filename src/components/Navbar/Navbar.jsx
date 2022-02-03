@@ -1,23 +1,19 @@
-import { NavbarLayout, NavbarList, NavbarItem, NavbarLink } from './Navbar.styled'
-
-import Logo from '../Logo/Logo'
+import { NavbarLayout, List, Item, Link } from './Navbar.styled'
 
 export default function Navbar() {
   return (
     <NavbarLayout>
-      {/* <NavbarList>
-        <NavbarItem>
-          <NavbarLink href='#'>Home</NavbarLink>
-        </NavbarItem>
-        <NavbarItem>
-          <NavbarLink href='#'>About</NavbarLink>
-        </NavbarItem>
-        <NavbarItem>
-          <NavbarLink href='#'>Store</NavbarLink>
-        </NavbarItem>
-      </NavbarList> */}
-
-      <Logo />
+      <List>
+        <Item>
+          <Link href='#'>Home</Link>
+        </Item>
+        <Item>
+          <Link href='#'>About</Link>
+        </Item>
+        <Item>
+          <Link href='#'>Store</Link>
+        </Item>
+      </List>
     </NavbarLayout>
   )
 }
