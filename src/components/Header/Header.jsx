@@ -6,7 +6,7 @@ import Logo from '../Logo/Logo'
 import Navbar from '../Navbar/Navbar'
 import Toggle from '../Toggle/Toggle'
 
-export default function Header() {
+export default function Header({ theme, setTheme }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
   const breakpointDesktop = 960
@@ -17,7 +17,7 @@ export default function Header() {
       <Logo />
       {windowWidth < breakpointDesktop && <Toggle />}
 
-      {windowWidth > breakpointDesktop && <Navbar />}
+      {windowWidth > breakpointDesktop && <Navbar theme={theme} setTheme={setTheme} />}
     </HeaderLayout>
   )
 }

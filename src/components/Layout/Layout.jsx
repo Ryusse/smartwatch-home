@@ -1,21 +1,12 @@
-import { LayoutGrid, Toggle } from './Layout.styled'
+import { LayoutGrid } from './Layout.styled'
 
 import Header from '../Header/Header'
 import Main from '../Main/Main'
 
-export default function Layout(props) {
-  function changeTheme() {
-    if (props.theme === 'light') {
-      props.setTheme('dark')
-    } else {
-      props.setTheme('light')
-    }
-  }
-
+export default function Layout({ theme, setTheme }) {
   return (
     <LayoutGrid>
-      <Toggle onClick={changeTheme}>Toggle</Toggle>
-      <Header />
+      <Header theme={theme} setTheme={setTheme} />
       <Main />
     </LayoutGrid>
   )

@@ -13,5 +13,9 @@ export const Item = styled.li``
 
 export const Link = styled.a`
   padding: 0.5rem 1rem;
-  color: black;
+  color: ${({ theme }) => theme.titleColor};
+`
+
+export const ToggleTheme = styled.button`
+  padding: 0.5rem;
 `

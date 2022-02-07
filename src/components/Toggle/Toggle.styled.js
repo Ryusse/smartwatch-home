@@ -8,5 +8,5 @@ export const Container = styled.div`
 export const Line = styled.div`
   width: 100%;
   height: 3.5px;
-  background-color: #08162b;
+  background-color: ${(props) => props.theme.backgroundColor};
 `
