@@ -15,7 +15,3 @@ export const Link = styled.a`
   padding: 0.5rem 1rem;
   color: ${({ theme }) => theme.titleColor};
 `
-
-export const ToggleTheme = styled.button`
-  padding: 0.5rem;
-`

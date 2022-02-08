@@ -1,6 +1,8 @@
+import { NavbarLayout, List, Item, Link } from './Navbar.styled'
+import { ToggleTheme } from '../Styles/Utils.styled'
+
 import Moon from '../Icons/Moon/Moon'
 import Sun from '../Icons/Sun/Sun'
-import { NavbarLayout, List, Item, Link, ToggleTheme } from './Navbar.styled'
 
 export default function Navbar({ theme, setTheme }) {
   function changeTheme() {
