@@ -1,11 +1,11 @@
 import { Container, Line } from './Toggle.styled'
 
-export default function Toggle() {
+export default function Toggle({ open, onClick }) {
   return (
-    <Container>
-      <Line></Line>
-      <Line></Line>
-      <Line></Line>
+    <Container onClick={onClick}>
+      <Line open={open}></Line>
+      <Line open={open}></Line>
+      <Line open={open}></Line>
     </Container>
   )
 }

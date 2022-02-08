@@ -5,4 +5,6 @@ export const HeaderLayout = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem 5vw;
+  max-width: 1440px;
+  margin: auto;
 `

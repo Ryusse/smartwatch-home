@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components'
 import Layout from './components/Layout/Layout'
 
 const LightTheme = {
+  menuBackground: '#ffffff',
   titleColor: '#08162B',
   primaryColor: '#FE3B8F',
   textColor: '#68707D',
@@ -15,6 +16,7 @@ const LightTheme = {
 }
 
 const DarkTheme = {
+  menuBackground: '#000000',
   titleColor: `#F9FAFE`,
   primaryColor: '#FE3B8F',
   textColor: '#B6BCC8',
