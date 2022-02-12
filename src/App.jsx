@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-// import { GlobalStyles } from './components/styles/Global.styled.js'
+import { GlobalStyles } from './components/styles/Global.styled.js'
 import { ThemeProvider } from 'styled-components'
 
 import Layout from './components/Layout/Layout'
@@ -34,11 +34,9 @@ export default function App() {
   const [theme, setTheme] = useState('light')
 
   return (
-    <>
-      {/* <GlobalStyles /> */}
-      <ThemeProvider theme={themes[theme]}>
-        <Layout theme={theme} setTheme={setTheme} />
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={themes[theme]}>
+      <GlobalStyles />
+      <Layout theme={theme} setTheme={setTheme} />
+    </ThemeProvider>
   )
 }
