@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { GlobalStyles } from './components/styles/Global.styled.js'
+// import { GlobalStyles } from './components/styles/Global.styled.js'
 import { ThemeProvider } from 'styled-components'
 
 import Layout from './components/Layout/Layout'
