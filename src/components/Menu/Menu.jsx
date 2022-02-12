@@ -1,8 +1,10 @@
-import { MenuContainer } from './Menu.styled'
+import { MenuContainer, MenuHeader, MenuList, MenuLink, MenuLogoContainer } from './Menu.styled'
 import { ToggleTheme } from '../Styles/Utils.styled'
 
 import Moon from '../Icons/Moon/Moon'
 import Sun from '../Icons/Sun/Sun'
+import Button from '../Button/Button'
+import Logo from '../Logo/Logo'
 
 export default function Menu({ open, theme, setTheme }) {
   function changeTheme() {
@@ -17,18 +19,25 @@ export default function Menu({ open, theme, setTheme }) {
 
   return (
     <MenuContainer open={open}>
-      <ToggleTheme onClick={changeTheme}> {icon} </ToggleTheme>
-      <ul>
+      <MenuHeader>
+        <ToggleTheme onClick={changeTheme}> {icon} </ToggleTheme>
+      </MenuHeader>
+      <MenuList>
         <li>
-          <a href=''></a>
+          <MenuLink href='#'>Home</MenuLink>
         </li>
         <li>
-          <a href=''></a>
+          <MenuLink href='#'>Smartphone</MenuLink>
         </li>
         <li>
-          <a href=''></a>
+          <MenuLink href='#'>Store</MenuLink>
         </li>
-      </ul>
+
+        <Button fullWidth={true} marginTop={true} content={'Buy Now'} />
+      </MenuList>
+      <MenuLogoContainer>
+        <Logo />
+      </MenuLogoContainer>
     </MenuContainer>
   )
 }

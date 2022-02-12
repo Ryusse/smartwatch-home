@@ -65,5 +65,14 @@ export const GlobalStyles = createGlobalStyle`
     background-color: transparent;
     border: none;
   }
+
+  figure{
+    margin: 0;
+    display: grid;
+  }
+
+  img{
+    width: 100%;
+  }
   
 `
