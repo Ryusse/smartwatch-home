@@ -34,9 +34,11 @@ export default function App() {
   const [theme, setTheme] = useState('light')
 
   return (
-    <ThemeProvider theme={themes[theme]}>
+    <>
       <GlobalStyles />
-      <Layout theme={theme} setTheme={setTheme} />
-    </ThemeProvider>
+      <ThemeProvider theme={themes[theme]}>
+        <Layout theme={theme} setTheme={setTheme} />
+      </ThemeProvider>
+    </>
   )
 }
