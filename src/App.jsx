@@ -11,8 +11,8 @@ const LightTheme = {
   primaryColor: '#FE3B8F',
   textColor: '#68707D',
   backgroundColor: '#F9FAFE',
-  cardColor: '#fffff',
-  shadowColor: '#7090B0',
+  cardColor: '#ffffff',
+  shadowColor: 'rgba(112, 144, 176, 0.1)',
 }
 
 const DarkTheme = {
@@ -22,7 +22,7 @@ const DarkTheme = {
   textColor: '#B6BCC8',
   backgroundColor: '#08162B',
   cardColor: '#2B3544',
-  shadowColor: '#010101',
+  shadowColor: 'rgba(1, 1, 1, 0.2)',
 }
 
 const themes = {

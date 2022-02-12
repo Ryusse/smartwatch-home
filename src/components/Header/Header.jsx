@@ -10,7 +10,7 @@ import Menu from '../Menu/Menu'
 export default function Header({ theme, setTheme }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const breakpointDesktop = 960
+  const breakpointDesktop = 860
 
   const handleToggle = () => {
     function toggleMenu(prevMenuOpen) {
