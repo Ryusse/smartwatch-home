@@ -14,6 +14,10 @@ This is a home page about smartwatches
   * Grid and flexbox
   * Mobile first workflow
 
+### **Preview**
+
+  [Link](https://link-url-here.org)
+
 ### **Screenshot**
 
 ![smartwatch light](./src/assets/design/smartwatch-light.jpg)
