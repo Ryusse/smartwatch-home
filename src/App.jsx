@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <>
-      <GlobalStyles />
+      {/* <GlobalStyles /> */}
       <ThemeProvider theme={themes[theme]}>
         <Layout theme={theme} setTheme={setTheme} />
       </ThemeProvider>
